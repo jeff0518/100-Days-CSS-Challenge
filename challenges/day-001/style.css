@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    width: 200px;
+    text-align: center;
+}
+
+.big {
+    display: block;
+    line-height: 1;
+    font-size: 77px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+  
+  .small {
+    display: block;
+    line-height: 1;
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+
+  .number {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .one-one {
+    position:absolute;
+    top: 0;
+    left: -16px;
+    width: 20px;
+    height: 40px;
+    background: #fff;
+    border-radius: 3px;
+    transform: rotate(50deg);
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .one-two {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 24px;
+    height: 100px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+
+  .zero-one, 
+  .zero-two {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    border: 24px solid #fff;
+    background: none;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    z-index: 8;
+  }
+  
+
+  .zero-two {
+    left: 100px;
+    z-index: 6;
+  }
