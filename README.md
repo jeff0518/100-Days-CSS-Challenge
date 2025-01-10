@@ -33,7 +33,7 @@ challenges/
 ## 作品瀏覽
 ### Day 1-10
 *正在進行中...*
-- Day 1: [作品名稱與簡短說明]
+- Day 1: [100 Days CSS Challenge]
 - Day 2: [作品名稱與簡短說明]
 ...
 
