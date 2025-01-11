@@ -33,8 +33,8 @@ challenges/
 ## 作品瀏覽
 ### Day 1-10
 *正在進行中...*
-- Day 1: [100 Days CSS：An easy start into the challenge with a custom build number with gradient.]
-- Day 2: [Menu Icon: Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher]
+- Day 1: [100 Days CSS：製作一個具有漸層效果的自定義數字]
+- Day 2: [Menu Icon: 簡單但令人印象深刻的動畫效果使其成為真正的視覺焦點]
 - Day 3: [作品名稱與簡短說明]
 ...
 
