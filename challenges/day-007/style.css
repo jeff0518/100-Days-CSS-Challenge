@@ -171,7 +171,7 @@
   background: #ebebeb;
 }
 
-.notifications .notifications {
+.notifications .notification {
   position: relative;
   margin: 25px 20px 25px 43px;
   z-index: 2;
@@ -183,12 +183,12 @@
 }
 
 .notifications .notifications:nth-child(3) {
-  animation: here-am-i 0.5s ease-out 0.4s;
+  animation: here-am-i 0.5s ease-out 0.6s;
   animation-fill-mode: both;
 }
 
 .notifications .notifications:nth-child(4) {
-  animation: here-am-i 0.5s ease-out 0.4s;
+  animation: here-am-i 0.5s ease-out 0.8s;
   animation-fill-mode: both;
 }
 
@@ -225,6 +225,57 @@
 
 .notifications p b {
   font-weight: 600;
+}
+
+.menu {
+  position: absolute;
+  top: 65px;
+  left: 50px;
+  width: 170px;
+  height: 270px;
+  background: #43627d;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(20px, 0, 0);
+}
+
+.menu.active {
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.menu li {
+  color: #93b2cd;
+  margin: 0;
+  padding: 18px 17px;
+  list-style: none;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu li:hover {
+  background: #385269;
+  color: #fff;
+}
+
+.menu span {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-top: -1px;
+}
+
+.menu .fa-gear,
+.menu .fa-user,
+.menu .fa-bell {
+  margin-top: 0;
 }
 
 @keyframes here-am-i {
