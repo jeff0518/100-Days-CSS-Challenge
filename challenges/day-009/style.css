@@ -1,7 +1,444 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+:root {
+  --drop-color: #7fc1f9;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #1a2238;
+  color: #394568;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  top: 45px;
+  left: 55px;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #f6edbd;
+  box-shadow: 0 0 0 10px #f6edbd;
+  overflow: hidden;
+  animation: rise 1s ease-out;
+}
+
+.moon .crater-1 {
+  position: absolute;
+  top: 9px;
+  left: 28px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+
+.moon .crater-2 {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-3 {
+  position: absolute;
+  top: 56px;
+  left: 10px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-4 {
+  position: absolute;
+  top: 37px;
+  left: 49px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-5 {
+  position: absolute;
+  top: 24px;
+  left: 61px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-6 {
+  position: absolute;
+  top: 55px;
+  left: 33px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-7 {
+  position: absolute;
+  top: 17px;
+  left: 46px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-8 {
+  position: absolute;
+  top: 28px;
+  left: 27px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-9 {
+  position: absolute;
+  top: 39px;
+  left: 17px;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-10 {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+.moon .crater-11 {
+  position: absolute;
+  top: 37px;
+  left: 37px;
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background: #ece1a8;
+}
+
+.hill-bg-1 {
+  position: absolute;
+  top: 201px;
+  left: -57px;
+  width: 337px;
+  height: 281px;
+  background: #26314f;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hill-bg-2 {
+  position: absolute;
+  top: 197px;
+  left: 177px;
+  width: 337px;
+  height: 281px;
+  background: #26314f;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hill-fg-1 {
+  position: absolute;
+  top: 248px;
+  left: -137px;
+  width: 337px;
+  height: 281px;
+  background: #303c5d;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hill-fg-2 {
+  position: absolute;
+  top: 221px;
+  left: 63px;
+  width: 337px;
+  height: 281px;
+  background: #303c5d;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hill-fg-3 {
+  position: absolute;
+  top: 248px;
+  left: 292px;
+  width: 337px;
+  height: 281px;
+  background: #303c5d;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.front {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 400px;
+  height: 90px;
+  background: #fff;
+  z-index: 10;
+}
+
+.front .temperature {
+  float: left;
+  margin-left: 20px;
+  font-size: 45px;
+  line-height: 90px;
+}
+
+.front .info {
+  float: left;
+  margin: 25px 0 0 13px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.front .preview {
+  float: right;
+  font-weight: 400;
+  text-align: right;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 25px 20px 0 0;
+}
+
+.front .preview td {
+  padding: 0 3px;
+  text-transform: uppercase;
+}
+
+.front .preview td:first-child {
+  font-weight: 300;
+}
+
+[class^="drop-"] {
+  position: absolute;
+  z-index: 20;
+  bottom: 90px;
+  border-radius: 50%;
+  background: var(--drop-color);
+  animation-fill-mode: both;
+  transform-origin: 50% 100%;
+}
+
+/* 產生 .drop-big-1 ~ .drop-big-10 */
+.drop-big-1,
+.drop-big-2,
+.drop-big-3,
+.drop-big-4,
+.drop-big-5,
+.drop-big-6,
+.drop-big-7,
+.drop-big-8,
+.drop-big-9,
+.drop-big-10 {
+  width: 8px;
+  height: 8px;
+  animation: drop 0.7s linear infinite;
+}
+
+.drop-medium-1,
+.drop-medium-2,
+.drop-medium-3,
+.drop-medium-4,
+.drop-medium-5,
+.drop-medium-6,
+.drop-medium-7,
+.drop-medium-8,
+.drop-medium-9,
+.drop-medium-10 {
+  width: 6px;
+  height: 6px;
+  opacity: 0.6;
+  animation: drop 1.3s linear infinite;
+}
+
+.drop-small-1,
+.drop-small-2,
+.drop-small-3,
+.drop-small-4,
+.drop-small-5,
+.drop-small-6,
+.drop-small-7,
+.drop-small-8,
+.drop-small-9,
+.drop-small-10 {
+  width: 4px;
+  height: 4px;
+  opacity: 0.3;
+  animation: drop 1.9s linear infinite;
+}
+
+/* 讓雨滴位置交錯（隨機 left & animation-delay） */
+.drop-big-1 {
+  left: 20px;
+  animation-delay: 0.1s;
+}
+.drop-big-2 {
+  left: 55px;
+  animation-delay: 0.3s;
+}
+.drop-big-3 {
+  left: 90px;
+  animation-delay: 0.2s;
+}
+.drop-big-4 {
+  left: 120px;
+  animation-delay: 0.5s;
+}
+.drop-big-5 {
+  left: 165px;
+  animation-delay: 0.15s;
+}
+.drop-big-6 {
+  left: 200px;
+  animation-delay: 0.4s;
+}
+.drop-big-7 {
+  left: 245px;
+  animation-delay: 0.25s;
+}
+.drop-big-8 {
+  left: 280px;
+  animation-delay: 0.35s;
+}
+.drop-big-9 {
+  left: 320px;
+  animation-delay: 0.05s;
+}
+.drop-big-10 {
+  left: 350px;
+  animation-delay: 0.6s;
+}
+
+.drop-medium-1 {
+  left: 22px;
+  animation-delay: 0.2s;
+}
+.drop-medium-2 {
+  left: 50px;
+  animation-delay: 0.4s;
+}
+.drop-medium-3 {
+  left: 85px;
+  animation-delay: 0.3s;
+}
+.drop-medium-4 {
+  left: 130px;
+  animation-delay: 0.6s;
+}
+.drop-medium-5 {
+  left: 175px;
+  animation-delay: 0.1s;
+}
+.drop-medium-6 {
+  left: 190px;
+  animation-delay: 0.5s;
+}
+.drop-medium-7 {
+  left: 230px;
+  animation-delay: 0.3s;
+}
+.drop-medium-8 {
+  left: 270px;
+  animation-delay: 0.2s;
+}
+.drop-medium-9 {
+  left: 310px;
+  animation-delay: 0.4s;
+}
+.drop-medium-10 {
+  left: 345px;
+  animation-delay: 0.7s;
+}
+
+.drop-small-1 {
+  left: 25px;
+  animation-delay: 0.3s;
+}
+.drop-small-2 {
+  left: 48px;
+  animation-delay: 0.1s;
+}
+.drop-small-3 {
+  left: 82px;
+  animation-delay: 0.5s;
+}
+.drop-small-4 {
+  left: 125px;
+  animation-delay: 0.4s;
+}
+.drop-small-5 {
+  left: 170px;
+  animation-delay: 0.2s;
+}
+.drop-small-6 {
+  left: 195px;
+  animation-delay: 0.6s;
+}
+.drop-small-7 {
+  left: 225px;
+  animation-delay: 0.3s;
+}
+.drop-small-8 {
+  left: 265px;
+  animation-delay: 0.7s;
+}
+.drop-small-9 {
+  left: 305px;
+  animation-delay: 0.2s;
+}
+.drop-small-10 {
+  left: 340px;
+  animation-delay: 0.5s;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate3d(40px, -320px, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  85% {
+    transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scaleX(3) scaleY(0) rotate(0deg);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translate(-20px, 200px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
 }
