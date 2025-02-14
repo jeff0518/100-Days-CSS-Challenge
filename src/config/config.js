@@ -56,6 +56,13 @@ const challengesConfig = {
         "At first glance impossible to implement with CSS, but filters make this possible too.",
       image: "/day-008.png",
     },
+    {
+      day: "009",
+      title: "Rainy Night",
+      description:
+        "The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.",
+      image: "/day-009.png",
+    },
   ],
 };
 
