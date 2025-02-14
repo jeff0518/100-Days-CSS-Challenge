@@ -35,9 +35,15 @@ challenges/
 
 *正在進行中...*
 
-* Day 1: [100 Days CSS：製作一個具有漸層效果的自定義數字]
-* Day 2: [Menu Icon: 簡單但令人印象深刻的動畫效果使其成為真正的視覺焦點]
-* Day 3: [作品名稱與簡短說明]
+* Day 1: [100 Days CSS: An easy start into the challenge with a custom build number with gradient.]
+* Day 2: [Menu Icon: Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher]
+* Day 3: [The Pyramide: Not as challenging as the real pyramids in Egypt, but the shadow path is not easy.]
+* Day 4: [Loading: The best are always websites that do not need a loading status. If they do, here would be a calming one.]
+* Day 5: [Profile: Who of you knows how many social media profiles you have already created? For a refreshing twist, you can also create one yourself.]
+* Day 6: [Statistic: In a world of numbers, it is important to be able to interpret them correctly. Beautiful statistics help to capture these data.]
+* Day 7: [Notifications：The three cornerstones of any application? Brought together in the smallest possible space.]
+* Day 8: [Metaballs: At first glance impossible to implement with CSS, but filters make this possible too.]
+* Day 9: [Rainy Night: The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.]
 ...
 
 ### Day 11-20
