@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="${challenge.image}" alt="${challenge.title}" />
               </div>
               <div class="icon">
-                <a href="#" class="iconBox">
+                <a href="/src/challenges/day-${challenge.day}/index.html" class="iconBox">
                   <span class="material-symbols-outlined">arrow_outward</span>
                 </a>
               </div>

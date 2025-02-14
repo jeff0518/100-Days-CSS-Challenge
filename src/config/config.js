@@ -5,56 +5,56 @@ const challengesConfig = {
       title: "100 Days CSS",
       description:
         "An easy start into the challenge with a custom build number with gradient.",
-      image: "/test.jpg",
+      image: "/day-001.png",
     },
     {
       day: "002",
       title: "Menu Icon",
       description:
         "Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher",
-      image: "/test.jpg",
+      image: "/day-002.png",
     },
     {
-      day: "001",
-      title: "100 Days CSS",
+      day: "003",
+      title: "The Pyramide",
       description:
-        "An easy start into the challenge with a custom build number with gradient.",
-      image: "/test.jpg",
+        "Not as challenging as the real pyramids in Egypt, but the shadow path is not easy.",
+      image: "/day-003.png",
     },
     {
-      day: "002",
-      title: "Menu Icon",
+      day: "004",
+      title: "Loading",
       description:
-        "Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher",
-      image: "/test.jpg",
+        "The best are always websites that do not need a loading status. If they do, here would be a calming one.",
+      image: "/day-004.png",
     },
     {
-      day: "001",
-      title: "100 Days CSS",
+      day: "005",
+      title: "Profile",
       description:
-        "An easy start into the challenge with a custom build number with gradient.",
-      image: "/test.jpg",
+        "Who of you knows how many social media profiles you have already created? For a refreshing twist, you can also create one yourself.",
+      image: "/day-005.png",
     },
     {
-      day: "002",
-      title: "Menu Icon",
+      day: "006",
+      title: "Statistic",
       description:
-        "Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher",
-      image: "/test.jpg",
+        "In a world of numbers, it is important to be able to interpret them correctly. Beautiful statistics help to capture these data.",
+      image: "/day-006.png",
     },
     {
-      day: "001",
-      title: "100 Days CSS",
+      day: "007",
+      title: "Notifications",
       description:
-        "An easy start into the challenge with a custom build number with gradient.",
-      image: "/test.jpg",
+        "The three cornerstones of any application? Brought together in the smallest possible space.",
+      image: "/day-007.png",
     },
     {
-      day: "002",
-      title: "Menu Icon",
+      day: "008",
+      title: "Metaballs",
       description:
-        "Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher",
-      image: "/test.jpg",
+        "At first glance impossible to implement with CSS, but filters make this possible too.",
+      image: "/day-008.png",
     },
   ],
 };
