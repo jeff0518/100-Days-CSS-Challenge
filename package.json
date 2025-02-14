@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^6.0.5"
-  }
+  },
+  "eslintIgnore": [
+    "README.md",
+    "src/config/config.js",
+    "node_modules"
+  ]
 }
