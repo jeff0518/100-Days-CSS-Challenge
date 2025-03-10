@@ -63,6 +63,13 @@ const challengesConfig = {
         "The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.",
       image: "/day-009.png",
     },
+    {
+      day: "010",
+      title: "Watch",
+      description:
+        "Classic, noble, modern or playful? What do you want your favorite watch to look like?",
+      image: "/day-010.png",
+    },
   ],
 };
 
