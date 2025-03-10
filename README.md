@@ -44,8 +44,6 @@ src/
 
 ### Day 1-10
 
-*正在進行中...*
-
 * Day 1: [100 Days CSS: An easy start into the challenge with a custom build number with gradient.]
 * Day 2: [Menu Icon: Used on almost every website by now, simple but impressively animated it becomes a real eye-catcher]
 * Day 3: [The Pyramide: Not as challenging as the real pyramids in Egypt, but the shadow path is not easy.]
@@ -55,9 +53,13 @@ src/
 * Day 7: [Notifications：The three cornerstones of any application? Brought together in the smallest possible space.]
 * Day 8: [Metaballs: At first glance impossible to implement with CSS, but filters make this possible too.]
 * Day 9: [Rainy Night: The perfect time of day and the perfect weather to program in peace. The raindrops even shatter on the ground.]
-...
+* Day 9: [Watch: Classic, noble, modern or playful? What do you want your favorite watch to look like?]
 
 ### Day 11-20
+
+*正在進行中...*
+
+### Day 21-31
 
 *即將開始...*
 
