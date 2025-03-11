@@ -70,6 +70,13 @@ const challengesConfig = {
         "Classic, noble, modern or playful? What do you want your favorite watch to look like?",
       image: "/day-010.png",
     },
+    {
+      day: "011",
+      title: "Walking Boots",
+      description:
+        "These boots are made for walking. Where are they going and for how long?",
+      image: "/day-011.png",
+    },
   ],
 };
 

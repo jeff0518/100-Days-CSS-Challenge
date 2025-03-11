@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.frame {
+  width: 400px;
+  height: 400px;
+  background: burlywood;
+  border-radius: 10px;
+  margin: calc((100vh - 400px) / 2) auto;
+  box-shadow: 5px 5px 5px gray;
+  position: relative;
+}
+
+.floor {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  height: 150px;
+  background: #222;
+}
+
+.shoe {
+  position: absolute;
+  top: 116px;
+  left: 115px;
+  width: 151px;
+  height: 128px;
+  background: url("https://100dayscss.com/codepen/doc-martens.svg");
+  transform-origin: 75px 0;
+}
+
+.left {
+  transform: rotate(-45deg);
+  animation: walkLeft 2000ms ease-in-out infinite;
+}
+
+.right {
+  transform: rotate(-45deg);
+  animation: walkRight 2000ms ease-in-out infinite;
+}
+
+@keyframes walkLeft {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes walkRight {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
