@@ -77,6 +77,13 @@ const challengesConfig = {
         "These boots are made for walking. Where are they going and for how long?",
       image: "/day-011.png",
     },
+    {
+      day: "012",
+      title: "Tooltip",
+      description:
+        "I'm quite sure, you already know what obsession means. But you can look it up anyways.",
+      image: "/day-012.png",
+    },
   ],
 };
 

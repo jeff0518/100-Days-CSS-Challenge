@@ -60,6 +60,7 @@ src/
 *正在進行中...*
 
 * Day 11: [Walking Boots: These boots are made for walking. Where are they going and for how long?]
+* Day 12: [Tooltip: I'm quite sure, you already know what obsession means. But you can look it up anyways.]
 
 ### Day 21-31
 
