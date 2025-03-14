@@ -84,6 +84,13 @@ const challengesConfig = {
         "I'm quite sure, you already know what obsession means. But you can look it up anyways.",
       image: "/day-012.png",
     },
+    {
+      day: "013",
+      title: "User Gallery",
+      description:
+        "An idea for a transition between user overview and profile page.",
+      image: "/day-013.png",
+    },
   ],
 };
 

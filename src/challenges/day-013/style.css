@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+@property --x {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+@property --y {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background: #fff;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+}
+
+.center .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+div.image-wrapper:nth-child(1) {
+  --x: -50%;
+  --y: -50%;
+}
+div.image-wrapper:nth-child(2) {
+  --x: 150%;
+  --y: -50%;
+}
+div.image-wrapper:nth-child(3) {
+  --x: -50%;
+  --y: 150%;
+}
+div.image-wrapper:nth-child(4) {
+  --x: 150%;
+  --y: 150%;
+}
+
+div.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  transition: all 0.3s;
+}
+
+div.image-wrapper img.image {
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+}
+
+div.image-wrapper .utils-button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translate(100%, 0%);
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+div.image-wrapper .utils-button button.btn {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: crimson;
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+div.image-wrapper .utils-button button.btn:hover {
+  background-color: rgb(245, 25, 44);
+  transform: scale(1.2);
+}
+
+div.image-wrapper .utils-button button.btn svg {
+  fill: white;
+  height: 16px;
+}
+
+.center:has(.image-wrapper:hover) .overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.center:has(.image-wrapper:hover) .image-wrapper {
+  transform: scale(0.8);
+}
+
+.center:has(.image-wrapper:hover) .image-wrapper:hover {
+  transform: scale(1.2);
+  transform-origin: var(--x) var(--y);
+  z-index: 99;
+}
+
+.center:has(.image-wrapper:hover) .image-wrapper:hover .utils-button {
+  top: 5%;
+  right: 5%;
+  transform: translate(0%, 0%);
+  opacity: 1;
+}

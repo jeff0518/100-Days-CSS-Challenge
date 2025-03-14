@@ -61,6 +61,7 @@ src/
 
 * Day 11: [Walking Boots: These boots are made for walking. Where are they going and for how long?]
 * Day 12: [Tooltip: I'm quite sure, you already know what obsession means. But you can look it up anyways.]
+* Day 13: [User Gallery: An idea for a transition between user overview and profile page.]
 
 ### Day 21-31
 
