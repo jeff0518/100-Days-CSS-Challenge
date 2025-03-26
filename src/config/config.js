@@ -91,6 +91,13 @@ const challengesConfig = {
         "An idea for a transition between user overview and profile page.",
       image: "/day-013.png",
     },
+    {
+      day: "014",
+      title: "Byciclopter",
+      description:
+        "Which side of the card do you want to use? Either drive or fly to work in the morning?",
+      image: "/day-014.png",
+    },
   ],
 };
 
